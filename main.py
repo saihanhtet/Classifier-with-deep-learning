@@ -25,8 +25,8 @@ def index():
 
 
 if __name__ == '__main__':
-    # import webbrowser  # import webbrowser package to open in browser
+    import webbrowser  # import webbrowser package to open in browser
     # open the website in browser with link
-    # webbrowser.open('http://127.0.0.1:5000/')
+    webbrowser.open('http://127.0.0.1:5000/')
     # debug should be false to open with webbrowser and debug = True run twice
-    app.run(debug=True)
+    app.run(debug=False)
