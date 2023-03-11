@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classifier</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form class="form" method="post">
+        <p class="heading">
+          Classifier
+          <select name="select" id="select">
+            <option value="sex">Gender</option>
+            <option value="classify" selected>Classifier</option>
+          </select>
+        </p>
+        <input
+          type="text"
+          class="input"
+          name="name"
+          placeholder="Enter myanmar name. Eg: Aung kyaw"
+          required
+        />
+        <input
+          type="text"
+          class="input"
+          placeholder="Result"
+          value="{{context.result}}"
+          readonly
+        />
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
